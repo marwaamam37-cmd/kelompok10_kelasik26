@@ -1,95 +1,63 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kelompok 10 - Our Team</title>
-
-  <!-- Google Fonts -->
+  <title>Kelompok 10 - Portofolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="ourteam.css">
+  <link rel="stylesheet" href="home/home.css">
 </head>
 <body>
   <!-- NAVBAR -->
   <header class="navbar">
     <a href="../index.html" class="brand">
-      <img src="imgIcon/iconTeamBlue.png" alt="Icon Kelompok">
+      <img src="./img/iconTeamBlue.png" alt="Icon Kelompok" class="icon-people">
       <span>Kelompok 10</span>
     </a>
 
     <nav class="nav-links">
-      <a href="../index.html">Home</a>
-      <a href="./ourteam.html" class="active">Our Team</a>
-      <a href="../learning/learning.html">Learning</a>
+      <a href="index.html" class="active">Home</a>
+      <a href="ourTeam/ourteam.html">Our Team</a>
+      <a href="learning/learning.html">Learning</a>
     </nav>
   </header>
 
-  <!-- TEAM SECTION -->
-  <main class="team-section">
-    <div class="team-header">
-      <h1>Kelompok 10</h1>
-      <p>Temui orang-orang luar biasa di balik portofolio ini</p>
+  <!-- HERO -->
+  <main class="hero">
+    <div class="hero-text">
+      <h1>
+        <span class="black">Welcome to</span>
+        <span class="blue">Our Portofolio!</span>
+      </h1>
+
+      <p>
+        we are a team of passionate learners,<br>
+        exploring technology, sharing<br>
+        knowledge, and growing together
+      </p>
+
+      <button type="button" class="btn" id="aboutTeamBtn">
+        About Our Team
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
     </div>
 
-    <div class="team-grid">
-      <!-- Member 1 -->
-      <div class="team-card">
-        <div class="avatar">
-          <img src="imgTeam/amam.jpeg" alt="Amam Marwa">
-        </div>
-        <h3>Amam Marwa</h3>
-        <button type="button" class="btn-detail" data-page="./about/amam.html">Lihat Detail</button>
-      </div>
-
-      <!-- Member 2 -->
-      <div class="team-card">
-        <div class="avatar">
-          <img src="imgTeam/dira.jpeg" alt="Dhias Rahma Aindira">
-        </div>
-        <h3>Dhias Rahma Aindira</h3>
-        <button type="button" class="btn-detail" data-page="./about/dira.html">Lihat Detail</button>
-      </div>
-
-      <!-- Member 3 -->
-      <div class="team-card">
-        <div class="avatar">
-          <img src="imgTeam/livi.jpeg" alt="Livia Harvina Aditya">
-        </div>
-        <h3>Livia Harvina Aditya</h3>
-        <button type="button" class="btn-detail" data-page="./about/livi.html">Lihat Detail</button>
-      </div>
-
-      <!-- Member 4 -->
-      <div class="team-card">
-        <div class="avatar">
-          <img src="imgTeam/rasyad.jpeg" alt="Rasyad Zain">
-        </div>
-        <h3>Rasyad Zain</h3>
-        <button type="button" class="btn-detail" data-page="./about/rasyad.html">Lihat Detail</button>
-      </div>
-
-      <!-- Member 5 -->
-      <div class="team-card">
-        <div class="avatar">
-          <img src="imgTeam/dilan.jpeg" alt="Dhilan Radia Irawan">
-        </div>
-        <h3>Dhilan Radia Irawan</h3>
-        <button type="button" class="btn-detail" data-page="./about/dhilan.html">Lihat Detail</button>
-      </div>
+    <div class="hero-image">
+      <img src="img/leptop.png" alt="Hero Image">
     </div>
   </main>
 
   <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-top">
-      <!-- Identitas Kelompok -->
       <div class="footer-brand">
         <div class="brand-row">
-          <img src="imgIcon/iconTeamWhite.png" alt="Icon Kelompok">
+          <img src="img/iconTeamWhite.png" alt="Icon Kelompok" class="icon-people">
           <div>
             <h3>Kelompok 10</h3>
             <small>Learn – Share – Grow</small>
@@ -97,46 +65,48 @@
         </div>
       </div>
 
-      <!-- Quick Links -->
       <div class="footer-links">
         <h4>Quick Links</h4>
-        <a href="../index.html">Home</a>
-        <a href="./ourteam.html">Team</a>
-        <a href="../learning/learning.html">Learning</a>
+        <a href="#">Home</a>
+        <a href="#">Team</a>
+        <a href="#">Learning</a>
       </div>
 
-      <!-- Contact Us -->
+      <!-- INFORMASI KONTAK -->
       <div class="footer-contact">
         <h4>Contact Us</h4>
+
         <p>
-          <img src="imgIcon/iconEmail.png" alt="Email">
-          <span>kelompok10@gmail.com</span>
+          <img src="img/iconEmail.png" alt="Email">
+          kelompok10@gmail.com
         </p>
+
         <p>
-          <img src="imgIcon/iconLocation.png" alt="Location">
-          <span>Jakarta, Indonesia</span>
+          <img src="img/iconLocation.png" alt="Location">
+          Jakarta, Indonesia
         </p>
       </div>
 
-      <!-- Social Media -->
+      <!-- MEDIA SOSIAL -->
       <div class="footer-social">
         <a href="https://github.com/marwaamam37-cmd/kelompok10_kelasik26.git" aria-label="GitHub">
-          <img src="imgIcon/iconGitHub.png" alt="GitHub">
+          <img src="img/iconGitHub.png" alt="GitHub">
         </a>
+
         <a href="#" aria-label="YouTube">
-          <img src="imgIcon/iconYouTube.png" alt="YouTube">
+          <img src="img/iconYouTube.png" alt="YouTube">
         </a>
+
         <a href="#" aria-label="Instagram">
-          <img src="imgIcon/iconInstagram.png" alt="Instagram">
+          <img src="img/iconInstagram.png" alt="Instagram">
         </a>
       </div>
     </div>
 
-    <!-- Copyright -->
     <p class="copyright">©2026 kelompok 10. All right reserved</p>
   </footer>
 
   <!-- JAVASCRIPT -->
-  <script src="ourteam.js"></script>
+  <script src="home/home.js"></script>
 </body>
 </html>
