@@ -12,23 +12,22 @@
 <body>
 
   <!-- ===== NAVBAR ===== -->
-  <header class="navbar">
+  <!-- Bagian header untuk menampung navbar -->
+<header class="navbar">
+  <!-- Logo dan nama kelompok -->
     <a href="#" class="brand">
-      <svg class="icon-people" viewBox="0 0 32 24" aria-hidden="true">
-        <circle cx="16" cy="7" r="4.5" fill="currentColor"/>
-        <path d="M7.5 21c0-4.7 3.8-7.5 8.5-7.5s8.5 2.8 8.5 7.5z" fill="currentColor"/>
-        <circle cx="5.5" cy="9" r="3" fill="currentColor"/>
-        <path d="M0 20c0-3.3 2.2-5.3 5.5-5.3 1 0 1.8.2 2.5.5-1.6 1.2-2.6 3-2.8 4.8z" fill="currentColor"/>
-        <circle cx="26.5" cy="9" r="3" fill="currentColor"/>
-        <path d="M32 20c0-3.3-2.2-5.3-5.5-5.3-1 0-1.8.2-2.5.5 1.6 1.2 2.6 3 2.8 4.8z" fill="currentColor"/>
-      </svg>
-      <span>Kelompok 10</span>
-    </a>
 
+        <!-- Menampilkan gambar ikon orang -->
+        <img src="img/iconTeamBlue.png" alt="Icon Kelompok" class="icon-people">
+
+        <!-- Nama kelompok -->
+        <span>Kelompok 10</span>
+
+    </a>
     <nav class="nav-links">
-      <a href="#" class="active">Home</a>
-      <a href="#">Our Team</a>
-      <a href="#">Learning</a>
+      <a href="index.html" class="active">Home</a>
+      <a href="ourTeam/ourteam.html">Our Team</a>
+      <a href="learning/learning.html">Learning</a>
     </nav>
   </header>
 
@@ -53,7 +52,7 @@
     </div>
 
     <div class="hero-image">
-      <img src="home/img/leptop.png" alt="Hero Image">
+      <img src="img/leptop.png" alt="Hero Image">
     </div>
   </main>
 
@@ -63,14 +62,7 @@
 
       <div class="footer-brand">
         <div class="brand-row">
-          <svg class="icon-people" viewBox="0 0 32 24" aria-hidden="true">
-            <circle cx="16" cy="7" r="4.5" fill="currentColor"/>
-            <path d="M7.5 21c0-4.7 3.8-7.5 8.5-7.5s8.5 2.8 8.5 7.5z" fill="currentColor"/>
-            <circle cx="5.5" cy="9" r="3" fill="currentColor"/>
-            <path d="M0 20c0-3.3 2.2-5.3 5.5-5.3 1 0 1.8.2 2.5.5-1.6 1.2-2.6 3-2.8 4.8z" fill="currentColor"/>
-            <circle cx="26.5" cy="9" r="3" fill="currentColor"/>
-            <path d="M32 20c0-3.3-2.2-5.3-5.5-5.3-1 0-1.8.2-2.5.5 1.6 1.2 2.6 3 2.8 4.8z" fill="currentColor"/>
-          </svg>
+          <img src="img/iconTeamWhite.png" alt="Icon Kelompok" class="icon-people">
           <div>
             <h3>Kelompok 10</h3>
             <small>Learn – Share – Grow</small>
@@ -85,36 +77,44 @@
         <a href="#">Learning</a>
       </div>
 
+      <!-- Bagian informasi kontak -->
       <div class="footer-contact">
+
+        <!-- Judul bagian kontak -->
         <h4>Contact Us</h4>
+
+        <!-- Informasi email -->
         <p>
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M3 5h18a1 1 0 0 1 1 1v.5l-10 6.500L2 6.500V6a1 1 0 0 1 1-1z M2 9l10 6.500L22 9v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" fill="currentColor"/>
-          </svg>
+          <img src="img/iconEmail.png" alt="Email">
           kelompok10@gmail.com
         </p>
+
+        <!-- Informasi lokasi -->
         <p>
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.500A2.500 2.500 0 1 1 12 6.500a2.500 2.500 0 0 1 0 5z" fill="currentColor"/>
-          </svg>
+          <img src="img/iconLocation.png" alt="Location">
           Jakarta, Indonesia
         </p>
+
       </div>
 
-      <div class="footer-social">
-        <!-- GitHub -->
-        <a href="#" aria-label="GitHub">
-          <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5a11.500 11.500 0 0 0-3.640 22.420c.580.110.790-.250.790-.560v-2c-3.200.700-3.880-1.360-3.880-1.360-.520-1.330-1.280-1.690-1.280-1.690-1.040-.710.080-.700.080-.700 1.150.080 1.760 1.180 1.760 1.180 1.030 1.760 2.700 1.250 3.350.960.100-.750.400-1.250.730-1.540-2.550-.290-5.240-1.280-5.240-5.690 0-1.260.450-2.280 1.180-3.090-.120-.290-.510-1.460.110-3.050 0 0 .970-.310 3.170 1.180a10.900 10.900 0 0 1 5.770 0c2.200-1.490 3.170-1.180 3.170-1.180.620 1.590.230 2.760.110 3.050.740.810 1.180 1.830 1.180 3.090 0 4.420-2.690 5.390-5.260 5.670.410.360.780 1.060.780 2.140v3.170c0 .310.210.680.800.560A11.500 11.500 0 0 0 12 .5z"/></svg>
-        </a>
-        <!-- YouTube -->
-        <a href="#" aria-label="YouTube">
-          <svg viewBox="0 0 24 24"><path fill="currentColor" d="M23 7.200a3 3 0 0 0-2.100-2.100C19 4.600 12 4.600 12 4.600s-7 0-8.900.500A3 3 0 0 0 1 7.200C.5 9.100.5 12 .5 12s0 2.900.500 4.800a3 3 0 0 0 2.100 2.100c1.900.500 8.900.500 8.900.500s7 0 8.900-.500a3 3 0 0 0 2.100-2.100c.500-1.900.500-4.800.500-4.800s0-2.900-.500-4.800zM9.800 15.200V8.800l5.800 3.200-5.800 3.200z"/></svg>
-        </a>
-        <!-- Instagram -->
-        <a href="#" aria-label="Instagram">
-          <svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5z"/><circle cx="12" cy="12" r="4.200" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.500" cy="6.500" r="1.300" fill="currentColor"/></svg>
-        </a>
-      </div>
+      <!-- Bagian footer untuk ikon media sosial -->
+<div class="footer-social">
+
+    <!-- Ikon GitHub -->
+    <a href="https://github.com/marwaamam37-cmd/kelompok10_kelasik26.git" aria-label="GitHub">
+        <img src="img/iconGitHub.png" alt="GitHub">
+    </a>
+
+    <!-- Ikon YouTube -->
+    <a href="#" aria-label="YouTube">
+        <img src="img/iconYouTube.png" alt="YouTube">
+    </a>
+
+    <!-- Ikon Instagram -->
+    <a href="#" aria-label="Instagram">
+        <img src="img/iconInstagram.png" alt="Instagram">
+    </a>
+</div>
 
     </div>
 

@@ -37,18 +37,17 @@ a {
   z-index: 5;
 }
 
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-weight: 700;
-  font-size: 18px;
-  color: var(--navy);
+.icon-people {
+    width: 35px;
+    height: 35px;
+    object-fit: contain; /* Menjaga gambar agar tidak gepeng */
 }
 
-.icon-people {
-  width: 32px;
-  height: 24px;
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
 }
 
 .nav-links {
@@ -215,7 +214,7 @@ a {
   margin-bottom: 6px;
 }
 
-.footer-contact svg {
+.footer-contact img {
   width: 14px;
   height: 14px;
   color: #ffffff;
@@ -238,7 +237,7 @@ a {
   color: #7fa6ee;
 }
 
-.footer-social svg {
+.footer-social img {
   width: 22px;
   height: 22px;
 }
