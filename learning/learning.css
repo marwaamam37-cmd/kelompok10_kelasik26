@@ -10,7 +10,6 @@ body {
     background: #cbd7ed;
 }
 
-
 /* =====================================
    NAVBAR
 ===================================== */
@@ -182,22 +181,20 @@ body {
     align-self: flex-end;
     margin-top: auto;
     padding: 9px 16px;
-
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 7px;
-
     background-color: #25488e;
     color: #ffffff;
-
     border-radius: 25px;
     text-decoration: none;
     font-size: 12px;
     font-weight: 500;
-
-    transition: background 0.2s ease,
-                transform 0.2s ease;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background 0.2s ease, transform 0.2s ease;
 }
 
 /* Gambar icon download */
