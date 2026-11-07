@@ -1,89 +1,86 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --navy: #1b2a4a;
+    --blue: #1f5fbf;
+    --blue-dark: #1a4a8a;
+    --text-dark: #111111;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #173765;
-    background: #cbd7ed;
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    color: var(--text-dark);
 }
 
-/* =====================================
-   NAVBAR
-===================================== */
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
+/* ===== NAVBAR ===== */
 .navbar {
-    min-height: 62px;
-    padding: 10px 3.2%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 24px;
+    padding: 18px 60px;
     background: #ffffff;
+    position: relative;
+    z-index: 5;
 }
 
-/* Logo kelompok */
 .brand {
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    gap: 9px;
-    color: #173765;
-    text-decoration: none;
-    font-size: 24px;
+    gap: 10px;
+    font-size: 21px;
     font-weight: 700;
+    color: var(--navy);
 }
 
-.brand img {
-    width: 32px;
-    height: 32px;
+.brand img,
+.icon-people {
+    width: 35px;
+    height: 35px;
     object-fit: contain;
 }
 
-/* Menu navigasi */
-
 .nav-links {
     display: flex;
-    align-items: center;
-    gap: clamp(22px, 5vw, 55px);
+    gap: 40px;
 }
 
 .nav-links a {
-    position: relative;
-    padding: 8px 0;
-    color: #102e5b;
-    text-decoration: none;
-    font-size: 17px;
+    font-size: 15,5px;
+    font-weight: 500;
+    color: var(--navy);
+    padding-bottom: 6px;
+    border-bottom: 2px solid transparent;
+    transition: 0.2s;
+}
+
+.nav-links a.active {
     font-weight: 700;
+    border-bottom-color: var(--navy);
 }
 
-/* Garis bawah menu aktif */
-
-.nav-links a:hover::after,
-.nav-links a.active::after {
-    content: "";
-    position: absolute;
-    left: 10%;
-    right: 10%;
-    bottom: 1px;
-    height: 3px;
-    border-radius: 5px;
-    background: #173765;
+.nav-links a:hover {
+    border-bottom-color: var(--navy);
 }
 
-
-/* =====================================
-   KONTEN UTAMA LEARNING
-===================================== */
-
+/* ===== KONTEN UTAMA LEARNING ===== */
 .learning-main {
-    min-height: 465px;
+    flex: 1;
     padding: 12px 3.4% 44px;
     background: #cbd7ed;
 }
-
-/* Judul halaman */
 
 .learning-heading {
     margin-bottom: 14px;
@@ -102,18 +99,12 @@ body {
     font-size: clamp(16px, 2.2vw, 23px);
 }
 
-
-/* =====================================
-   KARTU MATERI
-===================================== */
-
+/* ===== KARTU MATERI ===== */
 .lesson-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
 }
-
-/* Tampilan kartu */
 
 .lesson-card {
     overflow: hidden;
@@ -126,15 +117,13 @@ body {
     box-shadow: 0 3px 5px rgba(20, 39, 70, 0.25);
 }
 
-/* Gambar materi */
-
 .lesson-image {
     height: 152px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 12px;
-    background: #83b8fa;
+    background: #8ABEFF;
 }
 
 .lesson-image img {
@@ -142,8 +131,6 @@ body {
     height: 100%;
     object-fit: contain;
 }
-
-/* Isi kartu */
 
 .lesson-content {
     flex: 1;
@@ -172,11 +159,7 @@ body {
     line-height: 1.25;
 }
 
-
-/* =====================================
-   TOMBOL DOWNLOAD PDF
-===================================== */
-
+/* ===== TOMBOL DOWNLOAD PDF ===== */
 .download-button {
     align-self: flex-end;
     margin-top: auto;
@@ -187,17 +170,14 @@ body {
     gap: 7px;
     background-color: #25488e;
     color: #ffffff;
+    border: none;
     border-radius: 25px;
-    text-decoration: none;
+    font-family: inherit;
     font-size: 12px;
     font-weight: 500;
-    border: none;
     cursor: pointer;
-    font-family: inherit;
     transition: background 0.2s ease, transform 0.2s ease;
 }
-
-/* Gambar icon download */
 
 .downloadIcon {
     width: 16px;
@@ -205,33 +185,22 @@ body {
     object-fit: contain;
 }
 
-/* Efek ketika tombol disentuh */
-
 .download-button:hover {
     background-color: #173765;
     transform: translateY(-2px);
 }
 
-
-/* =====================================
-   FOOTER
-===================================== */
-
+/* ===== FOOTER ===== */
 .footer {
     position: relative;
     min-height: 118px;
     padding: 20px 4.8% 34px;
-
     display: grid;
     grid-template-columns: 1.35fr 1fr 1.15fr auto;
     gap: 28px;
-
     color: #ffffff;
     background: #1d2a40;
 }
-
-
-/* Identitas kelompok */
 
 .footer-brand-row {
     display: flex;
@@ -252,9 +221,6 @@ body {
     font-size: 11px;
 }
 
-
-/* Quick Links */
-
 .footer-links h2,
 .footer-contact h2 {
     margin-bottom: 4px;
@@ -262,11 +228,10 @@ body {
 }
 
 .footer-links a {
+    display: block;
     width: fit-content;
     margin-bottom: 3px;
-    display: block;
     color: #ffffff;
-    text-decoration: none;
     font-size: 11px;
 }
 
@@ -274,14 +239,11 @@ body {
     text-decoration: underline;
 }
 
-
-/* Contact Us */
-
 .footer-contact p {
-    margin-bottom: 5px;
     display: flex;
     align-items: center;
     gap: 8px;
+    margin-bottom: 5px;
     font-size: 12px;
 }
 
@@ -290,9 +252,6 @@ body {
     height: 17px;
     object-fit: contain;
 }
-
-
-/* Media Sosial */
 
 .footer-social {
     display: flex;
@@ -312,9 +271,6 @@ body {
     opacity: 0.7;
 }
 
-
-/* Copyright */
-
 .copyright {
     position: absolute;
     right: 0;
@@ -325,13 +281,18 @@ body {
     font-size: 10px;
 }
 
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+    .navbar {
+        padding: 16px 24px;
+    }
 
-/* =====================================
-   RESPONSIVE TABLET
-===================================== */
+    .nav-links {
+        gap: 20px;
+    }
+}
 
 @media (max-width: 800px) {
-
     .lesson-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -345,48 +306,30 @@ body {
     }
 }
 
-   /* RESPONSIVE HP */
 @media (max-width: 560px) {
-
-    /* Navbar HP */
-    .navbar {
-        padding: 10px 4%;
-        flex-direction: column;
-        gap: 8px;
-    }
-    .brand {
-        font-size: 21px;
-    }
-    .nav-links {
-        width: 100%;
-        justify-content: space-around;
-        gap: 12px;
-    }
-    .nav-links a {
-        font-size: 14px;
-    }
-
-    /* Konten HP */
     .learning-main {
         padding: 22px 5% 35px;
     }
+
     .lesson-grid {
         grid-template-columns: 1fr;
         gap: 18px;
     }
+
     .lesson-card {
         min-height: 300px;
     }
 
-    /* Footer HP */
     .footer {
         grid-template-columns: 1fr 1fr;
         gap: 24px 16px;
         padding: 24px 5% 42px;
     }
+
     .footer-social {
         gap: 15px;
     }
+
     .footer-social img {
         width: 25px;
         height: 25px;
